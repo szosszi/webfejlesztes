@@ -1,7 +1,7 @@
 # webfejlesztes
 
 Készítő neve: Dovák Szonja
-A weblap URL címe: githubb..
+A weblap URL címe: https://szosszi.github.io/webfejlesztes/
 Leírás: Ez a weboldal a DSG diákszervezet (Corvinus) hivatalos honlapja. Célja, hogy bemutassa a szervezetet az érdeklődők számára. A képek felhasználása engedély köteles!
 Saját JS kódom helye, célja, működése:
 
