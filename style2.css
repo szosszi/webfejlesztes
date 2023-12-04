@@ -175,7 +175,7 @@ article h1{
 }
 .elerhetoseg{
   background-color: antiquewhite;
-  width: 50%;
+  width: fit-content;
   border-radius: 7px;
   padding: 5px;
 }
