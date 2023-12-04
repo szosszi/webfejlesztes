@@ -1,0 +1,680 @@
+
+/*cím: Georgia Pro egyéb: futura*/ 
+*{
+    box-sizing: border-box;
+}
+.fotoalbum{
+  width: 350px; 
+  height: 200px; 
+  background: #000;
+}
+html {
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container>* {
+    margin: 1%;
+    font-family: Futura;
+}
+@font-face {
+    font-family: "sajat_gp";
+    src: url(Georgia_Pro/GeorgiaPro-Bold.ttf) format("truetype");
+  }
+@font-face {
+    font-family: "sajat_f";/*Futura*/
+    src: url(futura/Futura\ Book\ font.ttf) format("truetype");
+}
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2px;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+}
+header p{
+    width: 91%;
+    font-size: 2.5em;
+    background-color:  rgb(191, 143, 85);
+    color:  rgb(255, 243, 220);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-family: "sajat_gp", Georgia, 'Times New Roman';
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6, li, p, figcaption, .checkboxok_labellel{
+    font-family: "sajat_f";
+}
+
+article {
+    flex: 1 1 100%;
+    padding: 0px 8px;
+    color: rgb(191, 143, 85);
+    text-align: justify;
+}
+footer {
+    background-color: rgb(191, 143, 85);
+    color: rgb(255, 243, 220);
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;  
+}
+.bieten{
+    list-style-image: url(logok/zaszlo.png);
+    line-height: 220%;
+}
+/*<a href="https://www.flaticon.com/free-icons/german" title="german icons">German icons created by GeekClick - Flaticon</a>*/
+
+h1{
+    line-height: 20%;
+}
+figure{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+figure img{
+  width: 90%;
+}
+figcaption{
+  color:  rgb(191, 143, 85);
+}
+
+/*CLASSok*/
+#bier_animacios_ablak{
+  display: flex;
+  width: 98%;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#bier_kep{
+display: block;
+margin: auto auto 30px auto;
+width: 25%;
+position: relative;
+}
+#a_kerdes{
+  text-align: center;
+  
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+}
+.logo{
+    display: block;
+    margin: auto;
+    width: 34%;
+    height: 34%;
+    margin: auto 0;
+
+}
+.ikon{
+    width: 40%;
+    
+}
+.ikonok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0.1;
+}
+
+
+.button{
+display:block;
+color: rgb(191, 143, 85);
+background-color: rgb(255, 243, 220);
+padding: 6px 10px;
+cursor: pointer;
+border-radius: 5px;
+border-color: rgb(191, 143, 85);
+font-size: medium;
+margin: auto;
+}
+.nemlatszik_gomb{
+  display: none;
+}
+.urlaptorzs{
+    
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.bemutatk{
+    width:300px;
+    height:300px;
+}
+.kov_prog_resz{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.kov_prog_kep{
+    width: 80%;
+    margin-bottom: 2em;
+}
+article h1{
+  text-align: center;
+  font-size: 2.5em;
+}
+.elerhetoseg{
+  background-color: antiquewhite;
+  width: 50%;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+/*HAMBURGER MENU*/
+#menu {
+    z-index: 2; /*ettől kerül legfelülre, a többi elem felé*/
+  }
+nav .active{
+    background-color: rgb(45, 43, 43);
+    border-radius: 50%;
+
+  }
+#menu-ikon {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer; /*ettől egy kezecske lesz a kurzor*/
+    
+  }
+  
+  .vonal {
+    height: 5px;
+    width: 50px;
+    background-color: #d41c1c;
+    display: block;
+    border-radius: 5px;
+    transition: 1.5s ease; /*ilyen gyorsan történik a menü állapot váltása*/
+  }
+  
+  #allapot1 {
+    transform: translateY(-10px); /*felső kenyér*/
+  }
+  
+  #allapot3 {
+    transform: translateY(10px);/*alsó kenyér*/
+  }
+  
+  .nav { /* ha nincs hozzáadva .valtozas*/
+    transition: 1.5s ease;
+    display: none; /*ettől tűnik el a nav amikor nem akarjuk látni*/
+  }
+  
+  .nav ul {
+    padding: 0 21px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 0.6em;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+    font-size: 2.1em;
+  }
+  
+  .menu-hatter, #menu { 
+    top: 0;
+    left: 0;
+    position: absolute; /*felső bal sarokba teszi, absolute -> headeren belül*/
+  }
+  
+  .menu-hatter { /* ha nincs hozzáadva .valtozas*/
+    z-index: 1; /*így a háttér rétege a lista mögött lesz, dea többihez képest felül*/
+    width: 0;
+    height: 0;
+    margin: 30px 30px 20px 20px;
+    background: radial-gradient(ellipse, #d41c1c,  #aa3f3fec);
+    border-radius: 50%;
+    transition: 0.5s ease;
+  }
+  
+  .valtozas { /*ettől megjelennek az eddig nem látott dolgok*/
+    display: block;
+  }
+  
+  .valtozas .vonal {
+    background-color: white; /*ha kinyitom a menut, fehér színű lesz és elfordul*/
+    transform: translateX(-45px); /*a hamburgerhus kirepül jobbra*/
+  }
+  /*ANIMÁCIÓ*/
+  .valtozas #allapot1 {
+    transform: rotate(45deg) translate(43px, -31px); /*a felső kenyér elfordul*/
+  }
+  
+  .valtozas #allapot2 {
+    opacity: 0; 
+  }
+  
+  .valtozas #allapot3 {
+    transform: rotate(-45deg) translate(35px, 35px); /*az also kenyér elfordul*/
+  }
+  
+  .valtozas-hatter {
+    width: 900px;
+    height: 900px;
+    transform: translate(-50%,-50%); /*a háttér beúszásának iránya és mértéke*/
+  }
+/*GALÉRIA KÉPEI*/
+.galeria_flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.foto_kartya_resz{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+.elem{
+    position: relative; /*azért kell, hogy a homályosság pontosan a képen legyen*/
+    margin-bottom: 10px;
+}
+
+.foto_kartya{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+.megjeleno_szov{
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(225, 216, 167);
+    font-size: 30px;
+    text-align: center;
+    transition: 0.7s ease;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+.foto_kartya:hover {
+    opacity: 0.9;
+}
+.megjeleno_szov:hover{
+    opacity: 1;
+}
+/*TIMELINE*/
+.timeline{
+    display: block;
+    margin: 20px;
+    width: 80%;
+    border-left: 3px solid rgb(191, 143, 85);
+    padding:  0 20px 0 30px;
+}
+.timeline_blokk{
+    background-color: rgb(191, 143, 85);
+    padding: 10px 25px;
+    font-size: small;
+    border:  0px solid red;
+    line-height: 1.5em;
+    position: relative;
+    /*height: 80%;*/
+    margin-bottom: 12px;
+    color: #f1f1f1;
+}
+.timeline_blokk::before{
+content: '';
+display: block;
+width: 10px;
+height: 10px;
+border-radius: 50%; /*lekerekíti a négyzetek szélét és így körnek tűnnek*/
+background-color: white;
+border: 3px solid #d41c1c;
+position: absolute;
+top: 10px;
+left: -40px;
+
+
+}
+.timeline_blokk::after{
+content: '';
+width: 0;
+height: 0;
+border-style: solid;
+border-color: transparent #d41c1c transparent transparent;
+border-width: 8px;
+position: absolute;
+left: -17px;
+top: 10px;
+}
+.t_l_cim{
+    font-size: medium;
+}
+/*VEZETŐSÉGI BEMUTATKOZÁS*/
+.vezetoseg{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.kartya {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 10px;
+  }
+  
+  .kartya_belseje {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; /*ettől tűnik 3dsnek de kell hozzá egy sima transform is*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .kartya:hover .kartya_belseje {
+    transform: rotateY(180deg);
+  }
+  
+  .kartya_eleje, .kartya_hata {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /*ezt a Safari miatt kell odaírni mert a kövi sort nem érti*/
+    backface-visibility: hidden; /*ha meg van fordulva nem látszik a háta*/
+  }
+  .kartya_hata {
+    background-color: rgb(191, 143, 85);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+/*LENYÍLÓ MENÜ*/
+.lenyilo_menu_terulet {
+  width: 98%;
+  border-radius: 7px;
+  /*overflow: auto;*/
+  margin: auto;
+  
+}
+.checkboxok_labellel,
+.kontakt_szoveg {
+  padding: 14px 20px;
+}
+
+.checkboxok_labellel {
+  display: block;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  /*transition: background 5s;*/
+}
+
+.checkboxok_labellel:hover {
+  font-weight: bold;
+}
+
+.checkboxok_labellel::after {
+  content: "\002B"; /*ez a plusz jel kódja*/
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 12px;
+  height: 6px;
+  /*background-size: 40px;*/ /*átméretez, ohgy beleférjen a cucc*/
+  transition: transform 0.4s;
+}
+
+.kontakt_szoveg {
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+}
+
+.checkboxok {
+  display: none;
+}
+
+.checkboxok:checked  ~ .kontakt_szoveg { /* az olyan tartalmakat amit egy checked doboz van*/
+  display: block;
+}
+
+.checkboxok:checked ~ .checkboxok_labellel::after {
+  transform: translateY(-50%) rotate(0.125turn);
+}
+#studenten{
+  background-color: #000;
+  
+}
+#alumni{
+ background-color: rgb(224, 6, 6);
+}
+#partner{
+  background-color: rgb(243, 179, 5);
+}
+
+@media all and (min-width: 600px) {
+.fotoalbum{
+  height: 950px;;
+  width: 600px;
+}
+  .lenyilo_menu_terulet {
+    width: 60%;
+    margin: auto;
+  }  
+.kov_prog_resz{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+        
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-right: 40px;
+    justify-content: space-around;
+}
+header p{
+    width: 60%;
+}
+.nem_latszik_a_menutol_a_logo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+    .kov_prog_kep{
+        width: 60%;
+        margin-bottom: 2em;
+    }
+    .logo{
+        width: 25%;
+        height: 25%;
+    }
+    header p{
+        font-size: 3em;
+    }
+    .ikon{
+        width: 10%;  
+    }
+    .urlaptorzs{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .urlaptorzs h2{
+        width: 97%;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vezetoseg{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .foto_kartya_resz{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+@media all and (min-width: 768px) {
+  #a_kerdes{
+    padding-right: 70px;
+  }
+  
+  figure img{
+    width: 55%;
+  }
+  .fotoalbum{
+    height: 1150px;
+    width: 768px;
+  }
+  .lenyilo_menu_terulet {
+    width: 60%;
+    margin: auto;
+  } 
+    .kov_prog_resz{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+    }
+    .kov_prog_kep{
+        width: 45%;
+        margin: auto;
+    }
+    .logo{
+        width: 18%;
+        height: 18%;
+    }
+    header p{
+        font-size: 4em;
+    }
+    .nem_latszik_a_menutol_a_logo{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+  }
+  .nem_latszik_a_menutol_a_logo .logo{
+      padding-right: 12%;
+      width: 30%;
+      height: 30%;
+  }
+    .ikon{
+        width: 10%;
+        
+    }
+    form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .urlap_gomb{
+        width: 97%;
+        text-align: center;
+    }
+    .urlaptorzs h2{
+        width: 97%;
+        text-align: center;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vezetoseg{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .foto_kartya_resz{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .elem{
+        margin-bottom: 40px;
+    }
+}
+/*a GALÉRIA VALAMIÉRT ÖSSSZECSÚSZIK EZ UTÁN)*/
+@media all and (min-width: 1031px) {
+  .foto_kartya_resz{
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+}
+/*Ennél a méretnél mr túl oldalra csúszik a kép*/
+@media all and (min-width: 1250px) {
+  .nem_latszik_a_menutol_a_logo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.nem_latszik_a_menutol_a_logo .logo{
+  padding-left: 10%;
+}
+}
